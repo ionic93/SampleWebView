@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         editText.requestFocus();
     }
 
+    //각종 알림 및 요청을 받게되는 WebViewClient를 설정
     final class BrowserClient extends WebChromeClient {
         public boolean onJsAlert(WebView view, String url, String message, JsResult result) {
             result.confirm();
